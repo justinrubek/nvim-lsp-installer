@@ -2,8 +2,7 @@ INSTALL_ROOT_DIR:=$(shell pwd)/tests/fixtures/lsp_servers
 NVIM_HEADLESS:=nvim --headless --noplugin -u tests/minimal_init.vim
 
 dependencies:
-	git clone --depth 1 https://github.com/nvim-lua/plenary.nvim dependencies/pack/vendor/start/plenary.nvim
-	git clone --depth 1 https://github.com/neovim/nvim-lspconfig dependencies/pack/vendor/start/nvim-lspconfig
+	mkdir dependencies
 
 .PHONY: clean_dependencies
 clean_dependencies:
